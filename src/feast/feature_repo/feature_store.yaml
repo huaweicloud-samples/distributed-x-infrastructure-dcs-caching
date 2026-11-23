@@ -1,0 +1,8 @@
+project: credit_scoring
+registry: data/registry.db
+provider: local
+online_store:
+    type: redis
+    connection_string: "redis://:REDIS_PASSWORD@REDIS_HOST:6379/0"
+offline_store:
+    type: file

@@ -1,0 +1,4 @@
+PyMySQL==1.1.1
+# DCS Redis 5.0 不支持 HELLO/RESP3（Redis 6.0+ 才有），
+# redis-py >= 6 默认发 HELLO 会导致连接失败，故锁定 4.6.0（仅 AUTH）。
+redis==4.6.0

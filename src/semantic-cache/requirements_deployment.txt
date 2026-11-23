@@ -1,0 +1,16 @@
+ # Semantic Cache Deployment Requirements
+
+# 模型与缓存依赖（MaaS + Redis）
+
+# Web UI (Flask)
+flask>=2.3.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Built-in modules used (no installation needed):
+# - json
+# - subprocess  
+# - time
+# - os
+# - math
