@@ -1,0 +1,23 @@
+本目录是 DCS（分布式缓存服务）Web 会话存储样例。
+
+
+1. Install dependencies:
+
+    $ pip3 install -r requirements.txt
+
+
+2. Configure environment variables:
+
+    # Use the name of the example you want to run.
+    $ export FLASK_APP=example-1.py
+
+    # Replace the value with a random string.
+    $ export SECRET_KEY=some_secret_string
+
+    # 将 hostname 替换为 DCS Redis 实例连接地址。
+    $ export REDIS_URL=redis://:<redis-password>@<dcs-endpoint>:6379/
+
+
+3.  Start the server on port 5000:
+
+    $ flask run -h 0.0.0.0 -p 5000
